@@ -1,0 +1,12 @@
+@import "public/styles/global.scss";
+
+.header-container {
+  background-color: $base-dark;
+  color: $base-light;
+  font-size: 250px;
+  font-family: "Martin";
+}
+
+.header-text {
+  line-height: 0.65;
+}

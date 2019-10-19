@@ -1,27 +1,45 @@
 
 import React from "react"
-import "./footer.sass"
+import "./footer.scss"
 
 const Footer = () => (
-  <div className="footer">
+  <div className="footer footer-container">
     <div className="columns">
       <div className="column">
         <p className="footer-column-title">ABOUT</p>
-        <p className="footer-column-subtitle">OUR MISSION</p>
-        <p className="footer-column-subtitle">OUR STORY</p>
-        <p className="footer-column-subtitle">ACTION PLAN</p>
+        <p>
+          <a className="footer-column-subtitle">OUR MISSION</a>
+        </p>
+        <p>
+          <a className="footer-column-subtitle">OUR STORY</a>
+        </p>
+        <p>
+          <a className="footer-column-subtitle">ACTION PLAN</a>
+        </p>
       </div>
       <div className="column">
         <p className="footer-column-title">GET INVOLVED</p>
-        <p className="footer-column-subtitle">ATTEND A DINNER</p>
-        <p className="footer-column-subtitle">SPREAD THE WORD</p>
-        <p className="footer-column-subtitle">DONATE</p>
+        <p>
+          <a className="footer-column-subtitle">ATTEND A DINNER</a>
+        </p>
+        <p>
+          <a className="footer-column-subtitle">SPREAD THE WORD</a>
+        </p>
+        <p>
+          <a className="footer-column-subtitle">DONATE</a>
+        </p>
       </div>
       <div className="column">
         <p className="footer-column-title">CONTACT</p>
-        <p className="footer-column-subtitle">NEWSLETTER</p>
-        <p className="footer-column-subtitle">SOCIAL</p>
-        <p className="footer-column-subtitle">GET IN TOUCH</p>
+        <p>
+          <a className="footer-column-subtitle">NEWSLETTER</a>
+        </p>
+        <p>
+          <a className="footer-column-subtitle">SOCIAL</a>
+        </p>
+        <p>
+          <a className="footer-column-subtitle">GET IN TOUCH</a>
+        </p>
       </div>
     </div>
   </div>

@@ -1,0 +1,21 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+
+@import "public/styles/global.scss";
+
+.footer-container {
+  font-family: "GT America Extended Regular";
+  background: $base-dark !important;
+}
+
+.column {
+  text-align: center;
+  font-size: 25px;
+  color: $base-light;
+}
+
+.footer-column-subtitle {
+  color: $base-light;
+}
+
+// TODO: hover color

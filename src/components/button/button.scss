@@ -1,0 +1,16 @@
+@import "public/styles/global.scss";
+
+.button-container {
+  border: 1px $base-dark solid;
+  background-color: $base-light;
+  color: $base-dark;
+  padding: 20px;
+  text-transform: uppercase;
+  max-width: 250px;
+  text-align: center;
+  font-family: "GT America Extended Regular";
+  cursor: pointer;
+  font-size: 25px;
+}
+
+// TODO: hover styles
