@@ -1,0 +1,9 @@
+@import "../css/typography.css";
+
+html {
+  background-color: #F5F0EB;
+}
+p {
+  color: #F5F0EB;
+  font-family: "GT America Extended Regular"
+}
