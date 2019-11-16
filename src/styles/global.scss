@@ -1,0 +1,18 @@
+@import "~bulma/bulma.sass";
+@import "bulma/sass/utilities/_all.sass";
+@import "css/typography.scss";
+
+$base-dark: #1E002D;
+$base-light:#F5F0EB;
+
+html {
+  background-color: #F5F0EB;
+}
+
+h1 {
+  font-family: "Martin"
+}
+
+p {
+  // font-family: "GT America Extended Regular"
+}

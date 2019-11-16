@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `The Fair Chance Project`,
@@ -30,13 +32,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["Martin, GT America, GT America Compressed"],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
+      resolve: `gatsby-plugin-root-import`,
+      options : {
+        src: path.join(__dirname, `src`),
+        fonts: path.join(__dirname, `src/fonts`),
+        components: path.join(__dirname, `src/components`),
+      }
     },
+    'gatsby-plugin-resolve-src'
   ],
 }

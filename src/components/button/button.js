@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from 'prop-types';
 import "./button.scss"
-const Button = ({ text }) => {
+const Button = ({ text, style = {} }) => {
   return (
-    <button className="button-container">
+    <button className="button-container" style={style}>
       {text}
     </button>
   )

@@ -7,12 +7,14 @@
   "dependencies": {
     "bulma": "^0.7.5",
     "bulma-start": "0.0.3",
+    "eslint-loader": "^3.0.2",
     "gatsby": "^2.15.21",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-manifest": "^2.2.18",
     "gatsby-plugin-netlify-cms": "^4.1.18",
     "gatsby-plugin-offline": "^3.0.8",
     "gatsby-plugin-react-helmet": "^3.1.8",
+    "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.17",
     "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-plugin-web-font-loader": "^1.0.4",
@@ -25,6 +27,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.5",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
