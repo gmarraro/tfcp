@@ -16,6 +16,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <Button text={"Donate"} />
+    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

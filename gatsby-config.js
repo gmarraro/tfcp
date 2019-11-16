@@ -29,5 +29,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Martin, GT America, GT America Compressed"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
   ],
 }
