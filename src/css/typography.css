@@ -1,15 +1,15 @@
 @font-face {
   font-family: "GT America Extended Regular";
-  src: url("../fonts/GT-America-Extended-Regular.otf");
+  src: url("../fonts/GT-America-Extended-Regular.otf") format("otf");
 }
 
 @font-face {
   font-family: "GT America Compressed Bold";
   font-weight: bold;
-  src: url("../fonts/GT-America-Compressed-Bold.otf")
+  src: url("../fonts/GT-America-Compressed-Bold.otf") format("otf");
 }
 
 @font-face {
   font-family: "Martin";
-  src: url("../fonts/MARTIN-Regular.otf");
+  src: url("../fonts/MARTIN-Regular.otf") format("otf");
 }
