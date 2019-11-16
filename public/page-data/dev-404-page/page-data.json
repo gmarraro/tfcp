@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","result":{"data":{"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/"},{"path":"/404.html"}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+=======
+{"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","webpackCompilationHash":"","result":{"data":{"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/"},{"path":"/page-2/"},{"path":"/404.html"}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+>>>>>>> 41d60df5919c5468c712d354e0a6ecd8471619e8
