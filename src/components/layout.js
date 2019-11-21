@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Footer from "./footer"
+import Mission from "./mission"
 import Story from "./story"
 import Header from "./header/header"
 // import "./layout.css"
@@ -35,8 +36,9 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <Story></Story>
+        <Mission />
         <main>{children}</main>
+        <Story />
         <Footer />
       </div>
     </>
