@@ -9,6 +9,9 @@ import Button from "../components/button/button"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div style={{ "width": "100%"}}>
+      <Image />
+    </div>
   </Layout>
 )
 
