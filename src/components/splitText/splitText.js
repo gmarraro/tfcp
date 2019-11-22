@@ -5,10 +5,10 @@ import './splitText.scss'
 const SplitText = (props) => (
     <div id='split-text-container'>
         <div id={props.startsWithPurplr ? 'base-dark' : 'base-light'} className='split-text-top'>
-            <p id='text-item-top'> {props.firstHalfTop} <br></br> {props.firstHalfBottom}</p>
+            <h1 id='text-item-top'> {props.firstHalfTop} <br></br> {props.firstHalfBottom}</h1>
         </div>
         <div id={!props.startsWithPurplr ? 'base-dark' : 'base-light'} className='split-text-bottom'>
-            <p id='text-item-bottom'> {props.secondHalfTop} <br></br> {props.secondHalfBottom} </p>
+            <h1 id='text-item-bottom'> {props.secondHalfTop} <br></br> {props.secondHalfBottom} </h1>
         </div>
     </div >
 )
