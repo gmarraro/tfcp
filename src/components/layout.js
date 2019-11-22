@@ -13,6 +13,7 @@ import Footer from "./footer"
 import Mission from "./mission"
 import Story from "./story"
 import Header from "./header/header"
+import SplitText from './splitText/splitText'
 // import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -36,6 +37,9 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
+        <SplitText startsWithPurplr={true} firstHalfTop='A LIFETIME' firstHalfBottom='OF PUNISHMENT' secondHalfTop='AFTER' secondHalfBottom='SERVING YOUR TIME' />
+        <SplitText startsWithPurplr={false} firstHalfTop='ROBBED' firstHalfBottom='OF A FAIR CHANCE' secondHalfTop='TO' secondHalfBottom='TO REBUILD YOUR LIFE' />
+        <SplitText startsWithPurplr={true} firstHalfTop='DOES' firstHalfBottom='THAT SOUND' secondHalfTop='LIKE' secondHalfBottom='A JUST SYSTEM' />
         <Mission />
         <main>{children}</main>
         <Story />
