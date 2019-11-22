@@ -1,16 +1,16 @@
 import React from "react"
 
-// import './splitText.scss'
+import './splitText.scss'
 
 const SplitText = (props) => (
     <div id='split-text-container'>
-        <div id={props.startsWithPurplr ? 'base-dark' : 'base-light'} className='split-text'>
-            <h1> {props.topHalf}</h1>
+        <div id={props.startsWithPurplr ? 'base-dark' : 'base-light'} className='split-text-top'>
+            <p id='text-item-top'> {props.firstHalfTop} <br></br> {props.firstHalfBottom}</p>
         </div>
-        <div id={!props.startsWithPurplr ? 'base-dark' : 'base-light'} className='split-text'>
-            <h1> {props.bottomHalf}</h1>
+        <div id={!props.startsWithPurplr ? 'base-dark' : 'base-light'} className='split-text-bottom'>
+            <p id='text-item-bottom'> {props.secondHalfTop} <br></br> {props.secondHalfBottom} </p>
         </div>
-    </div>
+    </div >
 )
 
 export default SplitText;
