@@ -1,8 +1,7 @@
 @import "src/styles/global.scss";
 
 #split-text-container {
-  height: 50rem;
-  // height: 100%;
+  height: 30em;
 }
 
 #base-dark {
@@ -24,7 +23,6 @@
   height: 50%;
   display: flex;
   width: auto;
-  font-family: "Martin";
 }
 
 #text-item-top {
@@ -38,7 +36,6 @@
   height: 50%;
   display: flex;
   width: auto;
-  font-family: "Martin";
 }
 
 #text-item-bottom {
