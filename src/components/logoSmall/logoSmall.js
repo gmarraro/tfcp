@@ -3,7 +3,7 @@ import "./logoSmall.scss"
 
 const LogoSmall = () => {
   return (
-    <div className="logo-small-container">
+    <div className="logo-small-container is-hidden-desktop">
       TFCP
     </div>
   )

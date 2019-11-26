@@ -1,0 +1,19 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+@import "src/styles/global.scss";
+
+
+.infoText, .titleText {
+  font-family: "GT America Extended Regular";
+  font-size: 22px;
+  color: $base-dark;
+  text-align: left;
+}
+
+.infoText {
+    padding-bottom: 40px;
+}
+
+.storyContainer {
+  padding: 40px 20px 0px 20px;
+}

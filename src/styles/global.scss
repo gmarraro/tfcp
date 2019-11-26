@@ -1,3 +1,11 @@
+@import "bulma/sass/utilities/initial-variables";
+
+$size-1: 250px;
+$size-2: 96px;
+$size-3: 86px;
+$size-4: 60px;
+$size-6: 22px;
+
 @import "~bulma/bulma.sass";
 @import "bulma/sass/utilities/_all.sass";
 @import "css/typography.scss";
@@ -5,14 +13,11 @@
 $base-dark: #1E002D;
 $base-light:#F5F0EB;
 
+
 html {
   background-color: #F5F0EB;
 }
 
 h1 {
   font-family: "Martin"
-}
-
-p {
-  // font-family: "GT America Extended Regular"
 }
