@@ -2,7 +2,7 @@
 
 .split-text-container {
   height: 100vh;
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
 }
 
 .split-text-sections {
@@ -14,6 +14,7 @@
   color: $base-light;
   font-size: 10vw;
   text-align: center;
+  padding: 0 10px;
 }
 
 #base-light {
@@ -21,6 +22,7 @@
   color: $base-dark;
   font-size: 10vw;
   text-align: center;
+  padding: 0 10px;
 }
 
 // top

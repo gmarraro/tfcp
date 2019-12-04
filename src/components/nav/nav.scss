@@ -1,0 +1,48 @@
+@import "src/styles/global.scss";
+
+.navbar-item {
+  font-size: 72px;
+  line-height: 1;
+  border-top: 1px solid $base-light;
+  font-family: "Martin";
+  margin: 0 20px;
+}
+
+.navbar {
+  position: fixed;
+  background: transparent;
+  width: 100%;
+
+  &.is-active {
+    background: $base-dark;
+    height: 100vh;
+  }
+}
+
+.nav-header {
+  padding-top: 40px;
+}
+
+.navbar-items {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.nav-text {
+  color: $base-light;
+  font-size: 32px;
+  font-family: "Martin";
+  width: fit-content;
+  margin: 0 auto;
+  line-height: 1.3;
+
+  &.nav-text-large {
+    font-size: 48px;
+    line-height: 0.9;
+    border-top: 1px solid $base-light;
+    border-bottom: 1px solid $base-light;
+    padding-bottom: 7px;
+  }
+
+}

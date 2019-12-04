@@ -5,10 +5,10 @@ import "./information.scss"
 const Mission = () => (
   <div className="columns storyContainer">
       <div className="column is-one-quarter">
-        <p className="titleText">OUR MISSION</p>
+        <p className="titleText is-size-7-mobile">OUR MISSION</p>
      </div>
       <div className="column">
-        <p className="infoText is-size-6-mobile">&#x2192; Today, when a person is convicted of a crime, a system
+        <p className="infoText is-size-7-mobile">&#x2192; Today, when a person is convicted of a crime, a system
         of legislation takes effect, limiting that person’s
         employment, housing, and education opportunities. This
         system is often referred to as “collateral consequences.”
@@ -18,7 +18,7 @@ const Mission = () => (
         punishment of people who have already served their time.
         We call this a system of perpetual punishment. </p>
 
-        <p className="infoText is-size-6-mobile">&#x2192; 47,000 laws today restrict access to employment,
+        <p className="infoText is-size-7-mobile">&#x2192; 47,000 laws today restrict access to employment,
         housing, loans, business licenses, education, and public
         benefits for those who have been convicted of a
         crime—even after they have served their sentence, or even
@@ -30,7 +30,7 @@ const Mission = () => (
         adequately counsel defendants who may plead guilty
         before understanding the full ramifications of their actions.</p>
 
-        <p className="infoText is-size-6-mobile">&#x2192; This system keeps people from rejoining society,
+        <p className="infoText is-size-7-mobile">&#x2192; This system keeps people from rejoining society,
         rebuilding their lives, supporting their families. We believe
         in something more: a society that gives fair second
         chances, where everyone who seeks to work, tvo learn,

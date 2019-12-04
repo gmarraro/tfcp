@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#F5F0EB`,
         theme_color: `#F5F0EB`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -37,6 +37,7 @@ module.exports = {
         src: path.join(__dirname, `src`),
         fonts: path.join(__dirname, `src/fonts`),
         components: path.join(__dirname, `src/components`),
+        images: path.join(__dirname, `src/images`)
       }
     },
     'gatsby-plugin-resolve-src'

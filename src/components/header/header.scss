@@ -3,8 +3,10 @@
 .header-container {
   background-color: $base-dark;
   color: $base-light;
+  padding-bottom: 25px;
 }
 
 .header-text {
-  line-height: 0.65;
+  line-height: 0.61;
+  font-size: calc(86px + (400 - 86) * ((100vw - 300px) / (1600 - 300)));
 }

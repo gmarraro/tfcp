@@ -2,6 +2,9 @@
 
 .logo-small-container {
   background-color: $base-dark;
+  // mix-blend-mode: difference;
+  // background-blend-mode: color;
+
   padding: 20px;
   position: fixed;
   top: 15px;

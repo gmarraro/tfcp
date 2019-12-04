@@ -11,6 +11,7 @@ import Subheader from "./subheader/subheader"
 import GetInvolvedStickyFooter from "./getInvolvedStickyFooter/getInvolvedStickyFooter"
 import GetInvolved from "components/getInvolved/getInvolved"
 import LogoSmall from "components/logoSmall/logoSmall"
+import Nav from "components/nav/nav"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <LogoSmall />
+      <Nav />
       <Header siteTitle={data.site.siteMetadata.title} />
       <Subheader />
       <div
