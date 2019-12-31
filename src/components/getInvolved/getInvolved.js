@@ -6,7 +6,7 @@ import "./getInvolved.scss"
 const GetInvolved = () => {
   return (
     <div className="get-involved" id="get-in-touch">
-      <div class="get-involved-header is-size-4-mobile is-size-2-desktop">
+      <div class="get-involved-header is-size-2-tablet is-size-4-mobile is-size-2-desktop">
         <h2>WE'D LOVE</h2>
         <h2>TO</h2>
         <h2>HEAR FROM YOU</h2>

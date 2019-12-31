@@ -12,7 +12,7 @@ const Nav = () => {
   }
 
   return (
-    <nav className="navbar is-transparent" role="navigation" aria-label="main navigation" onClick={openNav}>
+    <nav className="navbar is-transparent is-hidden-desktop" role="navigation" aria-label="main navigation" onClick={openNav}>
       <div className="navbar-brand">
         <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarOpen">
           <span aria-hidden="true"></span>
@@ -28,7 +28,7 @@ const Nav = () => {
           <p className="nav-text">PROJECT</p>
         </div>
         <div className="navbar-items">
-          <a className="navbar-item">
+          <a className="navbar-item" href="#learn-more">
             ABOUT US
           </a>
           <a className="navbar-item">

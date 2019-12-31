@@ -3,7 +3,7 @@ import React from "react"
 import "./information.scss"
 
 const Mission = () => (
-  <div className="columns storyContainer">
+  <div className="columns storyContainer" id="learn-more">
       <div className="column is-one-quarter">
         <p className="titleText is-size-7-mobile">OUR MISSION</p>
      </div>

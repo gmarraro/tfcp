@@ -5,6 +5,9 @@
 
 .footer-container {
   background: $base-light !important;
+  @include until($desktop) {
+    padding: 0 !important;
+  }
 
   a {
     font-family: "GT America Compressed Bold"
@@ -37,6 +40,11 @@
   margin: 0 20px;
   text-align: left;
   padding: 0.75rem 0;
+
+  @include until($desktop) {
+    border-top: 1px solid $base-dark;
+    padding-bottom: 45px !important;
+  }
 }
 
 .footer-text {
@@ -44,4 +52,22 @@
   font-size: 18px;
   padding-bottom: 40px;
   min-height: 200px;
+
+  @include until($desktop) {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-cta {
+  background: $base-dark;
+  color: $base-light;
+  font-family: "Martin";
+  line-height: 0.7;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
 }

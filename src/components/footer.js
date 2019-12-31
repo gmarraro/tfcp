@@ -5,13 +5,18 @@ import Button from "components/button/button"
 
 const Footer = () => (
   <div className="footer footer-container">
+    <div className="footer-cta is-hidden-desktop is-size-3">
+      <p>WANT TO</p>
+      <p>GET</p>
+      <p>INVOLVED?</p>
+    </div>
     <div className="columns">
       <div className="column footer-section">
         <p className="footer-column-title">ATTEND</p>
         <p className="footer-column-title last">A DINNER</p>
         <p className="footer-text">Come break bread with us. We host
-        community dinners called A Feast for
-        Fair Chances to promote awareness
+        community dinners called <span className="is-italic">A Feast for
+        Fair Chances</span> to promote awareness
         of collateral consequences and open
         discussion into what it means to have
         a fair chance.</p>
@@ -42,45 +47,3 @@ const Footer = () => (
 )
 
 export default Footer
-
-
-// <div className="footer footer-container">
-// <div className="columns">
-//   <div className="column footer-section">
-//     <p className="footer-column-title">ABOUT</p>
-//     <p>
-//       <a className="footer-column-subtitle">OUR MISSION</a>
-//     </p>
-//     <p>
-//       <a className="footer-column-subtitle">OUR STORY</a>
-//     </p>
-//     <p>
-//       <a className="footer-column-subtitle">ACTION PLAN</a>
-//     </p>
-//   </div>
-//   <div className="column footer-section">
-//     <p className="footer-column-title">GET INVOLVED</p>
-//     <p>
-//       <a className="footer-column-subtitle">ATTEND A DINNER</a>
-//     </p>
-//     <p>
-//       <a className="footer-column-subtitle">SPREAD THE WORD</a>
-//     </p>
-//     <p>
-//       <a className="footer-column-subtitle">DONATE</a>
-//     </p>
-//   </div>
-//   <div className="column footer-section">
-//     <p className="footer-column-title">CONTACT</p>
-//     <p>
-//       <a className="footer-column-subtitle">NEWSLETTER</a>
-//     </p>
-//     <p>
-//       <a className="footer-column-subtitle">SOCIAL</a>
-//     </p>
-//     <p>
-//       <a className="footer-column-subtitle">GET IN TOUCH</a>
-//     </p>
-//   </div>
-// </div>
-// </div>

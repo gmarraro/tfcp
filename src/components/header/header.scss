@@ -1,12 +1,23 @@
 @import "src/styles/global.scss";
 
+.header-text {
+  line-height: 0.61;
+  font-size: calc(86px + (400 - 86) * ((100vw - 300px) / (1600 - 300)));
+
+  @include until($desktop) {
+    line-height: 0.65
+  }
+}
+
 .header-container {
   background-color: $base-dark;
   color: $base-light;
   padding-bottom: 25px;
+
+  @include until($desktop) {
+    padding-top: 150px;
+    padding-bottom: 15px;
+
+  }
 }
 
-.header-text {
-  line-height: 0.61;
-  font-size: calc(86px + (400 - 86) * ((100vw - 300px) / (1600 - 300)));
-}
