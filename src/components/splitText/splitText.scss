@@ -2,11 +2,17 @@
 
 .split-text-container {
   height: 100vh;
-  // scroll-snap-align: start;
+  // scroll-snap-type: mandatory;
+  // scroll-snap-points-y: repeat(3rem);
+  scroll-snap-type: y mandatory;
+}
+
+.split-text-container > div{
+  scroll-snap-align: center;
+
 }
 
 .split-text-sections {
-  scroll-snap-type: y mandatory;
 }
 
 #base-dark {

@@ -1,9 +1,9 @@
 @import "src/styles/global.scss";
 
 .logo-small-container {
-  background-color: $base-dark;
-  // mix-blend-mode: difference;
-  // background-blend-mode: color;
+  // background-color: $base-dark;
+  mix-blend-mode: difference;
+  background-blend-mode: color;
 
   padding: 20px;
   position: fixed;

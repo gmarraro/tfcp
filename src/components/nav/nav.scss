@@ -46,3 +46,19 @@
   }
 
 }
+
+.navbar-burger > span {
+  height: 1.5px;
+  width: 22px;
+}
+
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 7px)
+}
+
+.navbar-burger span:nth-child(2) {
+  top: calc(50%)
+}
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 7px)
+}

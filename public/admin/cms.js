@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2ed83a71c385a265e1fb";
+/******/ 	var hotCurrentHash = "14e9ff8c9316f154f73e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -838,25 +838,25 @@ var _netlifyIdentityWidget = _interopRequireDefault(__webpack_require__(/*! netl
 /* global __PATH_PREFIX__ CMS_PUBLIC_PATH */
 
 
-window.netlifyIdentity = _netlifyIdentityWidget["default"];
+window.netlifyIdentity = _netlifyIdentityWidget.default;
 
 var addLoginListener = function addLoginListener() {
-  return _netlifyIdentityWidget["default"].on("login", function () {
+  return _netlifyIdentityWidget.default.on("login", function () {
     document.location.href = "" + "/" + "admin" + "/";
   });
 };
 
-_netlifyIdentityWidget["default"].on("init", function (user) {
+_netlifyIdentityWidget.default.on("init", function (user) {
   if (!user) {
     addLoginListener();
   } else {
-    _netlifyIdentityWidget["default"].on("logout", function () {
+    _netlifyIdentityWidget.default.on("logout", function () {
       addLoginListener();
     });
   }
 });
 
-_netlifyIdentityWidget["default"].init();
+_netlifyIdentityWidget.default.init();
 
 ;
 
@@ -903,30 +903,32 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 var _netlifyCmsApp = _interopRequireDefault(__webpack_require__(/*! netlify-cms-app */ "netlify-cms-app"));
+
+var _emitter = _interopRequireDefault(__webpack_require__(/*! gatsby/cache-dir/emitter */ "./node_modules/gatsby/cache-dir/emitter.js")); // set global variables required by Gatsby's components
+// https://github.com/gatsbyjs/gatsby/blob/deb41cdfefbefe0c170b5dd7c10a19ba2b338f6e/docs/docs/production-app.md#window-variables
+// some Gatsby components require these global variables set here:
+// https://github.com/gatsbyjs/gatsby/blob/deb41cdfefbefe0c170b5dd7c10a19ba2b338f6e/packages/gatsby/cache-dir/production-app.js#L28
+
+
+window.___emitter = _emitter.default;
+window.___loader = {
+  enqueue: function enqueue() {},
+  hovering: function hovering() {}
+};
 /**
  * Load Netlify CMS automatically if `window.CMS_MANUAL_INIT` is set.
  */
 // eslint-disable-next-line no-undef
 
-
 if (true) {
-  _netlifyCmsApp["default"].init();
-} else {} // eslint-disable-next-line no-undef
+  _netlifyCmsApp.default.init();
+} else {}
+/**
+ * The stylesheet output from the modules at `modulePath` will be at `cms.css`.
+ */
 
 
-if (false) {} else {
-  /**
-   * In development styles are injected dynamically via the style-loader plugin
-   */
-  window.addEventListener("DOMContentLoaded", function (event) {
-    var list = document.querySelectorAll("link[rel='stylesheet']");
-    list.forEach(function (_ref) {
-      var href = _ref.href;
-
-      _netlifyCmsApp["default"].registerPreviewStyle(href);
-    });
-  });
-}
+_netlifyCmsApp.default.registerPreviewStyle("cms.css");
 
 ;
 
@@ -938,6 +940,7 @@ if (false) {} else {
   }
 
   reactHotLoader.register(_netlifyCmsApp, "_netlifyCmsApp", "/Users/gabmarr/Documents/Development/tfcp/node_modules/gatsby-plugin-netlify-cms/cms.js");
+  reactHotLoader.register(_emitter, "_emitter", "/Users/gabmarr/Documents/Development/tfcp/node_modules/gatsby-plugin-netlify-cms/cms.js");
 })();
 
 ;
@@ -947,6 +950,101 @@ if (false) {} else {
   leaveModule && leaveModule(module);
 })();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
+
+/***/ }),
+
+/***/ "./node_modules/gatsby/cache-dir/emitter.js":
+/*!**************************************************!*\
+  !*** ./node_modules/gatsby/cache-dir/emitter.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var mitt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mitt */ "./node_modules/mitt/dist/mitt.es.js");
+
+
+const emitter = Object(mitt__WEBPACK_IMPORTED_MODULE_0__["default"])()
+/* harmony default export */ __webpack_exports__["default"] = (emitter);
+
+
+/***/ }),
+
+/***/ "./node_modules/mitt/dist/mitt.es.js":
+/*!*******************************************!*\
+  !*** ./node_modules/mitt/dist/mitt.es.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//      
+// An event handler can take an optional event argument
+// and should not return a value
+                                          
+                                                               
+
+// An array of all currently registered event handlers for a type
+                                            
+                                                            
+// A map of event types and their corresponding event handlers.
+                        
+                                 
+                                   
+  
+
+/** Mitt: Tiny (~200b) functional event emitter / pubsub.
+ *  @name mitt
+ *  @returns {Mitt}
+ */
+function mitt(all                 ) {
+	all = all || Object.create(null);
+
+	return {
+		/**
+		 * Register an event handler for the given type.
+		 *
+		 * @param  {String} type	Type of event to listen for, or `"*"` for all events
+		 * @param  {Function} handler Function to call in response to given event
+		 * @memberOf mitt
+		 */
+		on: function on(type        , handler              ) {
+			(all[type] || (all[type] = [])).push(handler);
+		},
+
+		/**
+		 * Remove an event handler for the given type.
+		 *
+		 * @param  {String} type	Type of event to unregister `handler` from, or `"*"`
+		 * @param  {Function} handler Handler function to remove
+		 * @memberOf mitt
+		 */
+		off: function off(type        , handler              ) {
+			if (all[type]) {
+				all[type].splice(all[type].indexOf(handler) >>> 0, 1);
+			}
+		},
+
+		/**
+		 * Invoke all handlers for the given type.
+		 * If present, `"*"` handlers are invoked after type-matched handlers.
+		 *
+		 * @param {String} type  The event type to invoke
+		 * @param {Any} [evt]  Any value (object is recommended and powerful), passed to each handler
+		 * @memberOf mitt
+		 */
+		emit: function emit(type        , evt     ) {
+			(all[type] || []).slice().map(function (handler) { handler(evt); });
+			(all['*'] || []).slice().map(function (handler) { handler(type, evt); });
+		}
+	};
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (mitt);
+//# sourceMappingURL=mitt.es.js.map
+
 
 /***/ }),
 

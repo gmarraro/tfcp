@@ -11,7 +11,7 @@ const SplitText = ({ startsWithPurple, firstHalfTop, firstHalfBottom, secondHalf
             <div id={!startsWithPurple ? 'base-dark' : 'base-light'} className='split-text-bottom'>
                 <h1 id='text-item-bottom'  className="is-size-3-mobile"> {secondHalfTop} <br></br> {secondHalfBottom} </h1>
             </div>
-        </div >
+        </div>
     )
 }
 

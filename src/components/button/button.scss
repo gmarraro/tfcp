@@ -1,6 +1,6 @@
 @import "src/styles/global.scss";
 
-.button-container {
+.button-container, .fb-share-button {
   border: 3px $base-dark solid;
   background-color: $base-light;
   color: $base-dark;
@@ -13,6 +13,10 @@
 
   @include until($desktop) {
     border: 1px $base-dark solid;
+  }
+
+  a {
+    color: $base-dark;
   }
 }
 

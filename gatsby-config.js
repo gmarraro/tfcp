@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: `The Fair Chance Project`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `End perpetual punishment.`,
     author: `Gaby Marraro, Kaitlin Gu, Simon Gaviria`,
   },
   plugins: [
