@@ -3,18 +3,29 @@ import "./nav.scss"
 
 const Nav = () => {
   const openNav = () => {
-    let toggle = document.querySelector(".navbar-burger");
-    let menu = document.querySelector(".navbar-menu");
-    let nav = document.querySelector(".navbar");
-    toggle.classList.toggle("is-active");
-    menu.classList.toggle("is-active");
-    nav.classList.toggle("is-active");
+    let toggle = document.querySelector(".navbar-burger")
+    let menu = document.querySelector(".navbar-menu")
+    let nav = document.querySelector(".navbar")
+    toggle.classList.toggle("is-active")
+    menu.classList.toggle("is-active")
+    nav.classList.toggle("is-active")
   }
 
   return (
-    <nav className="navbar is-transparent is-hidden-desktop" role="navigation" aria-label="main navigation" onClick={openNav}>
+    <nav
+      className="navbar is-transparent is-hidden-desktop"
+      role="navigation"
+      aria-label="main navigation"
+      onClick={openNav}
+    >
       <div className="navbar-brand">
-        <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarOpen">
+        <a
+          role="button"
+          className="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarOpen"
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -31,15 +42,9 @@ const Nav = () => {
           <a className="navbar-item" href="#learn-more">
             ABOUT US
           </a>
-          <a className="navbar-item">
-            GET INVOLVED
-          </a>
-          <a className="navbar-item">
-            CONTACT
-          </a>
-          <a className="navbar-item">
-            DONATE
-          </a>
+          <a className="navbar-item">GET INVOLVED</a>
+          <a className="navbar-item">CONTACT</a>
+          <a className="navbar-item">DONATE</a>
         </div>
       </div>
     </nav>
@@ -47,4 +52,3 @@ const Nav = () => {
 }
 
 export default Nav
-

@@ -6,7 +6,7 @@ import Footer from "./footer"
 import Mission from "./mission"
 import Story from "./story"
 import Header from "./header/header"
-import SplitText from './splitText/splitText'
+import SplitText from "./splitText/splitText"
 import Subheader from "./subheader/subheader"
 import GetInvolvedStickyFooter from "./getInvolvedStickyFooter/getInvolvedStickyFooter"
 import GetInvolved from "components/getInvolved/getInvolved"
@@ -38,9 +38,27 @@ const Layout = ({ children }) => {
         }}
       >
         <div className="split-text-sections">
-          <SplitText startsWithPurple={true} firstHalfTop='A LIFETIME' firstHalfBottom='OF PUNISHMENT' secondHalfTop='AFTER' secondHalfBottom='SERVING YOUR TIME' />
-          <SplitText startsWithPurple={false} firstHalfTop='ROBBED' firstHalfBottom='OF A FAIR CHANCE' secondHalfTop='TO' secondHalfBottom='REBUILD YOUR LIFE' />
-          <SplitText startsWithPurple={true} firstHalfTop='DOES' firstHalfBottom='THAT SOUND' secondHalfTop='LIKE' secondHalfBottom='A JUST SYSTEM?' />
+          <SplitText
+            startsWithPurple={true}
+            firstHalfTop="A LIFETIME"
+            firstHalfBottom="OF PUNISHMENT"
+            secondHalfTop="AFTER"
+            secondHalfBottom="SERVING YOUR TIME"
+          />
+          <SplitText
+            startsWithPurple={false}
+            firstHalfTop="ROBBED"
+            firstHalfBottom="OF A FAIR CHANCE"
+            secondHalfTop="TO"
+            secondHalfBottom="REBUILD YOUR LIFE"
+          />
+          <SplitText
+            startsWithPurple={true}
+            firstHalfTop="DOES"
+            firstHalfBottom="THAT SOUND"
+            secondHalfTop="LIKE"
+            secondHalfBottom="A JUST SYSTEM?"
+          />
         </div>
         <Mission />
         <main>{children}</main>

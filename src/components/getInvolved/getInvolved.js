@@ -11,8 +11,12 @@ const GetInvolved = () => {
         <h2>TO</h2>
         <h2>HEAR FROM YOU</h2>
       </div>
-      <a className="get-in-touch-btn-mobile is-hidden-desktop" href="/contact">GET IN TOUCH</a>
-      <a className="get-in-touch-btn-desktop is-hidden-touch"  href="/contact">GET IN TOUCH</a>
+      <a className="get-in-touch-btn-mobile is-hidden-desktop" href="/contact">
+        GET IN TOUCH
+      </a>
+      <a className="get-in-touch-btn-desktop is-hidden-touch" href="/contact">
+        GET IN TOUCH
+      </a>
     </div>
   )
 }

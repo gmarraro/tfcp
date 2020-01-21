@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ "width": "100%"}}>
+    <div style={{ width: "100%" }}>
       <Image />
     </div>
   </Layout>

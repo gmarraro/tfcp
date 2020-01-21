@@ -1,9 +1,10 @@
 const React = require("react")
 
-exports.onRenderBody = ({ setPreBodyComponents })  => {
+exports.onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents([
-    <script src="https://donorbox.org/widget.js"
-      paypalExpress="false">
-    </script>
+    <script
+      src="https://donorbox.org/widget.js"
+      paypalExpress="false"
+    ></script>,
   ])
 }

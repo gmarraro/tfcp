@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types"
 import "./button.scss"
 const Button = ({ text, style = {}, onClick = () => {} }) => {
   return (
@@ -12,5 +12,5 @@ const Button = ({ text, style = {}, onClick = () => {} }) => {
 export default Button
 
 Button.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 }
