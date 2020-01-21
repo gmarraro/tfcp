@@ -2,19 +2,19 @@
 
 .navbar-item {
   font-size: 72px;
-  line-height: 1;
+  line-height: 1 !important;
   border-top: 1px solid $base-light;
   font-family: "Martin";
   margin: 0 20px;
 }
 
 .navbar {
-  position: fixed;
-  background: transparent;
+  position: fixed !important;
+  background-color: transparent !important;
   width: 100%;
 
   &.is-active {
-    background: $base-dark;
+    background: $base-dark !important;
     height: 100vh;
   }
 }
@@ -45,6 +45,10 @@
     padding-bottom: 7px;
   }
 
+}
+
+.navbar-burger {
+  background-color: rgba(0, 0, 0, 0.05)
 }
 
 .navbar-burger > span {
