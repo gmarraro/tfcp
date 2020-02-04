@@ -1,0 +1,27 @@
+@import "src/styles/global.scss";
+
+.top-text-section {
+  background: $base-light;
+  font-size: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+.top-text {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.sign-up-static {
+  font-size: 16px;
+  border-top: 1px solid $base-dark;
+  border-bottom: 1px solid $base-dark;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}

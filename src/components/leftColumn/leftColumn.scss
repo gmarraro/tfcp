@@ -1,0 +1,10 @@
+@import "src/styles/global.scss";
+
+.left-column-container {
+  background: $base-dark;
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
