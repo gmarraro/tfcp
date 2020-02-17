@@ -14,14 +14,39 @@
 .top-text {
   margin-bottom: 30px;
   text-align: left;
+  max-width: 500px;
 }
-.sign-up-static {
-  font-size: 16px;
+
+.sign-up-cta {
   border-top: 1px solid $base-dark;
   border-bottom: 1px solid $base-dark;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-up-static {
+  font-size: 16px;
   padding: 10px 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   cursor: pointer;
+}
+
+.sign-up-input {
+  height: 38px;
+  background-color: $input-background-color;
+  border-color: transparent;
+  width: 100%;
+  font-family: "GT America Extended Regular";
+
+  &:hover, &:focus {
+    border: none;
+  }
+}
+
+.control {
+  width: 100%;
 }

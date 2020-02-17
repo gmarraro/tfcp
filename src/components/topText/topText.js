@@ -12,9 +12,14 @@ const TopText = () => {
       </p>
       <div className="sign-up-cta">
         {!signingUp ? (
-          <p className="sign-up-static" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
+          <>
+            <p className="sign-up-static" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
+            <span>&rarr;</span>
+          </>
         ) : (
-          <input></input>
+          <div className="control">
+            <input className="input sign-up-input is-rounded" type="text"></input>
+          </div>
         )}
       </div>
     </div>

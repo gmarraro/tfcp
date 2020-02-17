@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Footer from "./footer"
-import Mission from "./mission"
-import Story from "./story"
 import Header from "./header/header"
 import SplitText from "./splitText/splitText"
 import Subheader from "./subheader/subheader"
@@ -30,7 +28,7 @@ const Layout = ({ children }) => {
     <>
       <LogoSmall />
       <Nav />
-      // <Header siteTitle={data.site.siteMetadata.title} />
+      {/* // <Header siteTitle={data.site.siteMetadata.title} /> */}
       <Subheader />
       <div
         className="columns"

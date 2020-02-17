@@ -11,7 +11,10 @@ $navbar-background-color: #1E002D;
 $navbar-item-hover-background-color: #1E002D;
 $navbar-item-hover-color:	#F5F0EB;
 $navbar-item-color:	#F5F0EB;
-
+$input-background-color: yellow;
+$input-focus-color: transparent;
+$input-focus-border-color: transparent;
+$input-focus-box-shadow-color: transparent;
 
 @import "~bulma/bulma.sass";
 @import "bulma/sass/utilities/_all.sass";
@@ -19,7 +22,6 @@ $navbar-item-color:	#F5F0EB;
 
 $base-dark: #1E002D;
 $base-light:#F5F0EB;
-
 
 html {
   background-color: #F5F0EB;

@@ -1,12 +1,12 @@
 import React from "react"
 
-import TopText from "components/topText/topText"
+import BigText from "components/bigText/bigText"
 import "./leftColumn.scss"
 
 const LeftColumn = () => {
   return (
     <div className="left-column-container column">
-      PLACEHOLDER
+      <BigText />
     </div>
   )
 }
