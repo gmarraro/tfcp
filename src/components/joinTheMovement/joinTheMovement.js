@@ -13,7 +13,15 @@ const JoinTheMovement = () => {
 
   return (
     <>
+      {/* GET IN TOUCH MODAL */}
       <div className={`modal ${getInTouch ? "is-active" : ""}`}>
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          {/* <Donate /> */}
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <div className={`modal ${donate ? "is-active" : ""}`}>
         <div class="modal-background"></div>
         <div class="modal-content">
           <Donate />
@@ -50,14 +58,14 @@ const JoinTheMovement = () => {
             </form>
           ) : (
             <>
-              <p className="sign-up-static" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
+              <p className="" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
               <span>&rarr;</span>
             </>
           )}
         </div>
-        <div  className="border-top" onClick={() => setGetInTouch(true)}>
+        <div className="border-top" onClick={() => setGetInTouch(true)}>
           <p>GET IN TOUCH</p>
-          <span></span>
+          <span>&rarr;</span>
         </div>
         <div className="border-top">
           <FacebookShareButton
@@ -68,12 +76,13 @@ const JoinTheMovement = () => {
             style={{ width: "100%" }}
           >
             <p>SHARE ON SOCIAL</p>
+            <span>&rarr;</span>
           </FacebookShareButton>
           <span></span>
         </div>
-        <div className="border-top border-bottom">
+        <div className="border-top border-bottom" onClick={() => setDonate(true)}>
           <p>DONATE</p>
-          <span></span>
+          <span>&rarr;</span>
         </div>
       </div>
     </div>

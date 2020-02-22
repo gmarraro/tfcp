@@ -11,7 +11,7 @@ const BigText = () => {
         <p>RECORD</p>
       </div>
       <div className="big-text">
-        <p> <span className="highlighted">44,000</span> “LEGAL”</p>
+        <p className="highlight-p"> <span className="highlighted">44,000</span>{" "}<span>“LEGAL”</span></p>
         <p>BARRIERS</p>
         <p>TO REENTERING</p>
         <p>SOCIETY</p>
@@ -19,7 +19,7 @@ const BigText = () => {
       <div className="big-text">
         <p>A LIFETIME</p>
         <p>OF PUNISHMENT</p>
-        <p> <span className="highlighted">AFTER</span> SERVING</p>
+        <p className="highlight-p"> <span className="highlighted">AFTER</span>{" "}SERVING</p>
         <p>YOUR TIME</p>
       </div>
       <div className="big-text">

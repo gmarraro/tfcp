@@ -24,6 +24,8 @@
 
 .ctasContainer > div {
   padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bottom-margin {
@@ -42,3 +44,13 @@
   position: fixed !important;
 }
 
+.control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.submit-email {
+  position: absolute;
+  right: 0;
+}
