@@ -60,4 +60,11 @@
 
 .control {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-email {
+  position: absolute;
+  right: 0;
 }

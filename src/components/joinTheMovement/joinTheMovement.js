@@ -40,8 +40,20 @@ const JoinTheMovement = () => {
       </p>
       <div className="ctasContainer">
         <div className="border-top">
-          <p>SIGN UP FOR OUR NEWSLETTER</p>
-          <span></span>
+          {signingUp ? (
+            <form name="newsletter" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="newsletter" />
+              <div className="control">
+                <input className="input sign-up-input is-rounded" type="text"></input>
+                <input className="submit-email" type="submit" onClick={() => console.log('HI!')}></input>
+              </div>
+            </form>
+          ) : (
+            <>
+              <p className="sign-up-static" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
+              <span>&rarr;</span>
+            </>
+          )}
         </div>
         <div  className="border-top" onClick={() => setGetInTouch(true)}>
           <p>GET IN TOUCH</p>
