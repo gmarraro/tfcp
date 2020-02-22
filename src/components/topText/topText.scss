@@ -3,18 +3,29 @@
 .top-text-section {
   background: $base-light;
   font-size: 24px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 15%;
+  height: 100vh;
+
+  @include until($tablet) {
+    margin: 0px 5%;
+  }
+
+  @include from($tablet) {
+    max-width: 500px;
+    margin: 0 15%;
+  }
 }
 
 .top-text {
   margin-bottom: 30px;
   text-align: left;
   max-width: 500px;
+  @include until($tablet) {
+    line-height: 1.3;
+  }
 }
 
 .sign-up-cta {

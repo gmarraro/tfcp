@@ -5,7 +5,7 @@ import "./leftColumn.scss"
 
 const LeftColumn = () => {
   return (
-    <div className="left-column-container column">
+    <div className="left-column-container">
       <BigText />
     </div>
   )

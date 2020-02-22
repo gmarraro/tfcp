@@ -2,17 +2,43 @@
 
 .joinContainer {
   text-align: left;
-  margin: 0 15%;
-  max-width: 500px;
-  font-size: 18px;
   padding-bottom: 60px;
+
+  @include until($tablet) {
+    margin: 0px 5%;
+  }
+
+  @include from($tablet) {
+    max-width: 500px;
+    margin: 0 15%;
+  }
 }
 
 .titleText {
   font-family: "Martin";
   margin-bottom: 40px;
+  @include until($tablet) {
+    font-size: 42px;
+  }
+}
+
+.ctasContainer > div {
+  padding: 15px 0;
 }
 
 .bottom-margin {
   margin-bottom: 20px;
 }
+
+.border-top  {
+  border-top: 1px solid $base-dark;
+}
+
+.border-bottom  {
+  border-bottom: 1px solid $base-dark;
+}
+
+.modal.is-active {
+  position: fixed !important;
+}
+

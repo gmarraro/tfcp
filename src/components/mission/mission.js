@@ -3,8 +3,8 @@ import React from "react"
 import "./mission.scss"
 
 const Mission = () => (
-  <div className="missionContainer" id="learn-more" >
-    <p className="titleText is-size-4">OUR MISSION</p>
+  <div className="missionContainer is-size-6-mobile-only" id="learn-more" >
+    <p className="titleText is-size-4-tablet">OUR MISSION</p>
     <p className="bottom-margin">
       Today, when a person is convicted of a crime or even arrested, a system of legislation takes
       effect limiting that person’s employment, housing, and education opportunities. This

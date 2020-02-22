@@ -8,7 +8,7 @@ import "./rightColumn.scss"
 
 const RightColumn = () => {
   return (
-    <div className="right-column-container column">
+    <div className="right-column-container">
       <TopText />
       <Mission />
       <Story />

@@ -1,0 +1,36 @@
+@import "src/styles/global.scss";
+
+.footer-container {
+  background: url("~src/images/our-story.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+
+  @include until($tablet) {
+    background-position: right -150px top;
+  }
+}
+
+.footer-main-text {
+  color: $base-light;
+  line-height: 0.61;
+  font-size: calc(82px + (250 - 82) * ((100vw - 300px) / (1600 - 300)));
+  @include until($desktop) {
+    line-height: 0.65
+  }
+  @media (min-width: 768px) {
+    align-self: center;
+  }
+}
+
+.join-button {
+  font-family: GT America Extended Regular;
+  border: none;
+  border-radius: 2px;
+  margin-top: 45px;
+  width: fit-content;
+}

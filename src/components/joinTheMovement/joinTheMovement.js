@@ -12,22 +12,25 @@ const JoinTheMovement = () => {
   const [donate, setDonate] = useState(false)
 
   return (
-    <div className="joinContainer">
-      <p className="titleText is-size-4">JOIN THE MOVEMENT</p>
-      {/* GET IN TOUCH MODAL */}
-      <div className={`modal is-clipped ${getInTouch ? "is-active" : ""}`}>
-        <div class="modal-background"></div>
-        <div class="modal-content">
-
-        </div>
-      </div>
-      {/* DONATE MODAL */}
-      <div className={`modal is-clipped ${donate ? "is-active" : ""}`}>
+    <>
+      <div className={`modal ${getInTouch ? "is-active" : ""}`}>
         <div class="modal-background"></div>
         <div class="modal-content">
           <Donate />
         </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+
       </div>
+    <div className="joinContainer is-size-6-mobile-only">
+      <p className="titleText is-size-4-tablet" id="join-the-movement">JOIN THE MOVEMENT</p>
+      {/* GET IN TOUCH MODAL */}
+      {/* DONATE MODAL */}
+      {/* <div className={`modal ${donate ? "is-active" : ""}`}>
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <Donate />
+        </div>
+      </div> */}
       <p className="bottom-margin">
         Work alongside us. We seek to reform the
         system of 47,000 laws that keep people in
@@ -36,15 +39,15 @@ const JoinTheMovement = () => {
         consider donating today.
       </p>
       <div className="ctasContainer">
-        <div>
+        <div className="border-top">
           <p>SIGN UP FOR OUR NEWSLETTER</p>
           <span></span>
         </div>
-        <div onClick={() => setGetInTouch(true)}>
+        <div  className="border-top" onClick={() => setGetInTouch(true)}>
           <p>GET IN TOUCH</p>
           <span></span>
         </div>
-        <div>
+        <div className="border-top">
           <FacebookShareButton
             url="thefairchanceproject.com"
             resetButtonStyle={false}
@@ -52,16 +55,17 @@ const JoinTheMovement = () => {
             // className="share-button-container"
             style={{ width: "100%" }}
           >
-            <div>SHARE ON SOCIAL</div>
+            <p>SHARE ON SOCIAL</p>
           </FacebookShareButton>
           <span></span>
         </div>
-        <div>
+        <div className="border-top border-bottom">
           <p>DONATE</p>
           <span></span>
         </div>
       </div>
     </div>
+    </>
   )
 }
 

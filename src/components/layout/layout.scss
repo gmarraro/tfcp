@@ -1,0 +1,7 @@
+@import "bulma/sass/utilities/mixins";
+@import "bulma/sass/grid/columns.sass";
+@import "src/styles/global.scss";
+
+.right-column {
+  background-color: $base-light;
+}

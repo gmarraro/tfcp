@@ -5,18 +5,27 @@ const BigText = () => {
   return (
     <div className="big-text-container">
       <div className="big-text">
-        70-100 MILLION <span className="highlighted">AMERICANS</span>{" "}
-        HAVE A CRIMINAL RECORD
+        <p>70-100 MILLION</p>
+        <p className="highlighted">AMERICANS</p>
+        <p>HAVE A CRIMINAL</p>
+        <p>RECORD</p>
       </div>
       <div className="big-text">
-        <span className="highlighted">44,000</span> “LEGAL” BARRIERS{" "}
-        TO REENTERING SOCIETY
+        <p> <span className="highlighted">44,000</span> “LEGAL”</p>
+        <p>BARRIERS</p>
+        <p>TO REENTERING</p>
+        <p>SOCIETY</p>
       </div>
       <div className="big-text">
-        A LIFETIME OF PUNISHMENT <span className="highlighted">AFTER</span> SERVING YOUR TIME
+        <p>A LIFETIME</p>
+        <p>OF PUNISHMENT</p>
+        <p> <span className="highlighted">AFTER</span> SERVING</p>
+        <p>YOUR TIME</p>
       </div>
       <div className="big-text">
-        <span className="highlighted">#END</span> PERPETUAL PUNISHMENT
+        <p className="highlighted">#END</p>
+        <p>PERPETUAL</p>
+        <p>PUNISHMENT</p>
       </div>
     </div>
   )

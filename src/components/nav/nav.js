@@ -13,7 +13,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="navbar is-transparent is-hidden-desktop"
+      className="navbar is-transparent"
       role="navigation"
       aria-label="main navigation"
       onClick={openNav}
@@ -21,7 +21,7 @@ const Nav = () => {
       <div className="navbar-brand">
         <a
           role="button"
-          className="navbar-burger burger"
+          className="navbar-burger burger is-absolute"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarOpen"
@@ -33,18 +33,12 @@ const Nav = () => {
       </div>
 
       <div id="navbarOpen" className="navbar-menu">
-        <div className="nav-header">
-          <p className="nav-text">THE</p>
-          <p className="nav-text nav-text-large">FAIR CHANCE</p>
-          <p className="nav-text">PROJECT</p>
-        </div>
         <div className="navbar-items">
-          <a className="navbar-item" href="#learn-more">
-            ABOUT US
+          <a className="navbar-item" href="#our-mission">
+            OUR MISSION
           </a>
+          <a className="navbar-item" href="#our-story">OUR STORY</a>
           <a className="navbar-item">GET INVOLVED</a>
-          <a className="navbar-item">CONTACT</a>
-          <a className="navbar-item">DONATE</a>
         </div>
       </div>
     </nav>

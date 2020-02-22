@@ -1,16 +1,17 @@
 @import "src/styles/global.scss";
 
 .big-text {
+  height: 100vh;
   font-family: "Martin";
   line-height: 0.7;
   color: $base-light;
   height: 100vh;
-  padding: 0 15%;
+  padding: 0 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(48px + (86 - 48) * ((100vw - 360px) / (1600 - 360)));
+  font-size: calc(48px + (140 - 48) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .highlighted {
