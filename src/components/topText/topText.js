@@ -12,10 +12,10 @@ const TopText = () => {
       </p>
       <div className="sign-up-cta">
         {signingUp ? (
-          <form name="newsletter" method="POST" data-netlify="true" className="email-form">
-          <input type="hidden" name="form-name" value="newsletter" />
+          <form name="newsletter-two" method="POST" data-netlify="true" className="email-form">
+          <input type="hidden" name="form-name" value="newsletter-two" />
           <div className="control">
-            <input className="input sign-up-input is-rounded" type="text"></input>
+            <input className="input sign-up-input is-rounded" type="email" name="email"></input>
             <input className="submit-email" type="submit" onClick={() => console.log('HI!')}></input>
           </div>
           </form>

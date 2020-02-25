@@ -43,7 +43,7 @@ const JoinTheMovement = () => {
             <form name="newsletter" method="POST" data-netlify="true" className="email-form">
                 <input type="hidden" name="form-name" value="newsletter" />
               <div className="control">
-                <input className="input sign-up-input is-rounded" type="email"></input>
+                <input className="input sign-up-input is-rounded" name="email" type="email"></input>
                 <input className="submit-email" type="submit" value="&rarr;" onClick={(e) => e.preventDefault()}></input>
               </div>
             </form>
