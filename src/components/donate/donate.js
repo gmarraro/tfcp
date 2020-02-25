@@ -8,18 +8,18 @@ const Donate = () => {
         allowpaymentrequest=""
         frameborder="0"
         height="900px"
+        width="100%"
         name="donorbox"
         scrolling="no"
         seamless="seamless"
         src="https://donorbox.org/embed/the-fair-chance-project"
-        style={{
-          maxWidth: "500px",
-          minWidth: "310px",
-          maxHeight: "none!important",
-          height: "600px",
-          width: "100%",
-        }}
-      ></iframe>
+        style={{minWidth: "310px",
+                minHeight: "600px",
+                paddingTop: "25px",
+                maxHeight: "none!important"
+              }}
+      >
+      </iframe>
     </div>
   )
 }

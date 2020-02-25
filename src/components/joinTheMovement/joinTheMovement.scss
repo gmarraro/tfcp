@@ -20,12 +20,11 @@
   @include until($tablet) {
     font-size: 42px;
   }
-}
 
-.ctasContainer > div {
-  padding: 15px 0;
-  display: flex;
-  justify-content: space-between;
+  @include from($tablet) {
+    line-height: 40px;
+    padding-top: 25px;
+ }
 }
 
 .bottom-margin {
@@ -34,6 +33,13 @@
 
 .border-top  {
   border-top: 1px solid $base-dark;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &.no-padding {
+    padding: 0;
+  }
 }
 
 .border-bottom  {
@@ -53,4 +59,44 @@
 .submit-email {
   position: absolute;
   right: 0;
+}
+
+.get-in-touch {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #1E002D;
+}
+
+.email-form {
+  width: 110%;
+  margin: 0 -4%;
+
+  @include from($tablet) {
+    margin: 0 -5%;
+  }
+}
+
+.share-button-container {
+  border: none;
+  background: $base-light;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "GT America Extended Regular";
+  padding: 0;
+}
+
+.donation-widget {
+  margin: 0 auto;
+}
+
+.modal-close {
+  position: absolute !important;
+}
+
+input[type=submit] {
+  border: none;
+  background: transparent;
+  font-size: 16px;;
 }

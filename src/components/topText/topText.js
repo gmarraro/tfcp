@@ -12,7 +12,7 @@ const TopText = () => {
       </p>
       <div className="sign-up-cta">
         {signingUp ? (
-          <form name="newsletter" method="POST" data-netlify="true">
+          <form name="newsletter" method="POST" data-netlify="true" className="email-form">
           <input type="hidden" name="form-name" value="newsletter" />
           <div className="control">
             <input className="input sign-up-input is-rounded" type="text"></input>
