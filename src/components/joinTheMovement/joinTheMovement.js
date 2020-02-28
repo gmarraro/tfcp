@@ -10,6 +10,27 @@ const JoinTheMovement = () => {
   const [share, setShare] = useState(false)
   const [donate, setDonate] = useState(false)
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      // .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
+
   return (
     <>
       <div className={`modal ${donate ? "is-active" : ""}`}>
@@ -40,7 +61,20 @@ const JoinTheMovement = () => {
       <div className="ctasContainer">
         <div className={`border-top ${signingUp ? "no-padding" : ""}`} onClick={() => setSigningUp(true)}>
           {signingUp ? (
-            <form name="newsletter" method="POST" data-netlify="true" className="email-form">
+            <form
+              // name="newsletter"
+              // method="POST"
+              // data-netlify="true"
+              // className="email-form"
+
+              name="newsletter"
+              method="post"
+              action="/thanks/"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+
+            >
                 <input type="hidden" name="form-name" value="newsletter" />
               <div className="control">
                 <input className="input sign-up-input is-rounded" name="email" type="email"></input>
