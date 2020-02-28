@@ -7,29 +7,7 @@ import "./joinTheMovement.scss"
 
 const JoinTheMovement = () => {
   const [signingUp, setSigningUp] = useState(false)
-  const [share, setShare] = useState(false)
   const [donate, setDonate] = useState(false)
-
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  //     .join("&");
-  // }
-
-  // const handleSubmit = e => {
-  //   e.preventDefault();
-  //   const form = e.target;
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({
-  //       "form-name": form.getAttribute("name"),
-  //       ...this.state
-  //     })
-  //   })
-  //     // .then(() => navigateTo(form.getAttribute("action")))
-  //     .catch(error => alert(error));
-  // };
 
   return (
     <>
@@ -43,14 +21,6 @@ const JoinTheMovement = () => {
       </div>
     <div className="joinContainer is-size-6-mobile-only">
       <p className="titleText is-size-4-tablet" id="join-the-movement">JOIN THE MOVEMENT</p>
-      {/* GET IN TOUCH MODAL */}
-      {/* DONATE MODAL */}
-      {/* <div className={`modal ${donate ? "is-active" : ""}`}>
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <Donate />
-        </div>
-      </div> */}
       <p className="bottom-margin">
         Work alongside us. We seek to reform the
         system of 47,000 laws that keep people in
@@ -59,35 +29,13 @@ const JoinTheMovement = () => {
         consider donating today.
       </p>
       <div className="ctasContainer">
-
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
-
-        <div className="field half">
-            <input  className="input sign-up-input is-rounded" type="text" name="email" id="email" />
-        </div>
-
-        <input type="submit" value="Send Message" className="submit-email" />
-    </form>
-
-
         <div className={`border-top ${signingUp ? "no-padding" : ""}`} onClick={() => setSigningUp(true)}>
           {signingUp ? (
-            <form
-              name="newsletter"
-              method="POST"
-              data-netlify="true"
-              className="email-form"
-              action="#"
-              data-netlify-honeypot="bot-field"
-
-            >
-              <input type="hidden" name="form-name" value="newsletter" />
-              <div className="control">
-                <input className="input sign-up-input is-rounded" name="email" type="email"></input>
-                <input className="submit-email" type="submit" value="&rarr;"></input>
-              </div>
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#" className="email-form">
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
+              <input  className="input sign-up-input is-rounded" type="text" name="email" id="email"></input>
+              <input type="submit" value="&rarr;" className="submit-email" />
             </form>
           ) : (
             <>
