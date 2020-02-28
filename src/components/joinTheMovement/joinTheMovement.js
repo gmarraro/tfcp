@@ -64,8 +64,7 @@ const JoinTheMovement = () => {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <div className="field half first">
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
+          <input className="input sign-up-input is-rounded" name="email" type="email"></input>
         </div>
         <div className="field half">
             <label htmlFor="email">Email</label>
@@ -102,7 +101,7 @@ const JoinTheMovement = () => {
                 <input type="hidden" name="form-name" value="newsletter" />
               <div className="control">
                 <input className="input sign-up-input is-rounded" name="email" type="email"></input>
-                <input className="submit-email" type="submit" value="&rarr;" onClick={(e) => e.preventDefault()}></input>
+                <input className="submit-email" type="submit" value="&rarr;"></input>
               </div>
             </form>
           ) : (
