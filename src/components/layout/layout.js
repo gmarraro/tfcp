@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      {/* <Nav /> */}
+      <Nav />
       <div
         className="columns"
         style={{

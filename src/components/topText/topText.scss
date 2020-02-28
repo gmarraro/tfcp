@@ -66,5 +66,21 @@
 
 .submit-email {
   position: absolute;
-  right: 0;
+
+  @media screen and (min-width: $tablet) {
+    right: 4%;
+  }
+}
+
+.email-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 110%;
+  margin: 0 -4%;
+
+  @include from($tablet) {
+    margin: 0 -5%;
+  }
 }

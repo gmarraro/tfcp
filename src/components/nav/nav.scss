@@ -1,7 +1,7 @@
 @import "src/styles/global.scss";
 
 .navbar-menu {
-  display: none;
+  // display: none;
 
   &.is-active {
     display: flex;
@@ -69,6 +69,7 @@
   top: 0;
 
   &:hover {
+    color: $base-light;
     background-color: rgba(0, 0, 0, 0.05)
   }
 }
@@ -82,9 +83,50 @@
   top: calc(50% - 7px)
 }
 
-.navbar-burger span:nth-child(2) {
+.navbar-burger span:nth-child(2), .navbar-burger.desktop span:nth-child(2)  {
   top: calc(50%)
 }
-.navbar-burger span:nth-child(3) {
+.navbar-burger span:nth-child(3), .navbar-burger.desktop span:nth-child(3) {
   top: calc(50% + 7px)
+}
+
+.navbar-burger {
+  // display: block !important;
+}
+
+// DESTKOP
+.navbar-burger.desktop {
+  width: 100vw;
+  height: 100vh;
+  > span {
+    width: 25px;
+    height: 2px;
+  }
+
+  .navbar-item {
+    width: fit-content;
+  }
+
+}
+
+.modal.desktop-nav {
+  background: $base-dark;
+  .modal-content {
+    overflow: hidden;
+  }
+}
+
+.navbar-desktop.modal-content {
+  width: 100% !important;
+}
+
+.navbar-items-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .navbar-item {
+    width: fit-content;
+    font-size: 72px;
+  }
 }
