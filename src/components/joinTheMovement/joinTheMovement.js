@@ -63,21 +63,12 @@ const JoinTheMovement = () => {
       <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <div className="field half first">
-          <input className="input sign-up-input is-rounded" name="email" type="email"></input>
-        </div>
+
         <div className="field half">
-            <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" />
+            <input  className="input sign-up-input is-rounded" type="text" name="email" id="email" />
         </div>
-        <div className="field">
-            <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" rows="6"></textarea>
-        </div>
-        <ul className="actions">
-            <li><input type="submit" value="Send Message" className="special" /></li>
-            <li><input type="reset" value="Clear" /></li>
-        </ul>
+
+        <input type="submit" value="Send Message" className="submit-email" />
     </form>
 
 
@@ -88,17 +79,11 @@ const JoinTheMovement = () => {
               method="POST"
               data-netlify="true"
               className="email-form"
-              action="/"
+              action="#"
               data-netlify-honeypot="bot-field"
 
-              // name="newsletter"
-              // method="post"
-              // action="/thanks/"
-              // data-netlify="true"
-              // onSubmit={handleSubmit}
-
             >
-                <input type="hidden" name="form-name" value="newsletter" />
+              <input type="hidden" name="form-name" value="newsletter" />
               <div className="control">
                 <input className="input sign-up-input is-rounded" name="email" type="email"></input>
                 <input className="submit-email" type="submit" value="&rarr;"></input>
