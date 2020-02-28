@@ -5,7 +5,7 @@ const BigText = () => {
   return (
     <div className="big-text-container">
       <div className="big-text">
-        <p>70-100 MILLION</p>
+        <p className="extra-space">70-100 MILLION</p>
         <p className="highlighted">AMERICANS</p>
         <p>HAVE A CRIMINAL</p>
         <p>RECORD</p>

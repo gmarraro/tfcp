@@ -34,11 +34,11 @@ const Nav = () => {
 
       <div id="navbarOpen" className="navbar-menu">
         <div className="navbar-items">
-          <a className="navbar-item" href="#our-mission">
+          <a className="navbar-item" href="#mission">
             OUR MISSION
           </a>
-          <a className="navbar-item" href="#our-story">OUR STORY</a>
-          <a className="navbar-item">GET INVOLVED</a>
+          <a className="navbar-item" href="#story">OUR STORY</a>
+          <a className="navbar-item" href="#join-the-movement">GET INVOLVED</a>
         </div>
       </div>
     </nav>

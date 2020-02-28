@@ -36,6 +36,8 @@
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
+  color: $base-dark;
+  cursor: pointer;
 
   &.no-padding {
     padding: 0;
@@ -44,6 +46,7 @@
 
 .border-bottom  {
   border-bottom: 1px solid $base-dark;
+  color: $base-dark;
 }
 
 .modal.is-active {
@@ -98,5 +101,5 @@
 input[type=submit] {
   border: none;
   background: transparent;
-  font-size: 16px;;
+  font-size: 16px;
 }

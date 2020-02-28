@@ -3,7 +3,7 @@ import React from "react"
 import "./mission.scss"
 
 const Mission = () => (
-  <div className="missionContainer is-size-6-mobile-only" id="learn-more" >
+  <div className="missionContainer is-size-6-mobile-only" id="mission" >
     <p className="titleText is-size-4-tablet">OUR MISSION</p>
     <p className="bottom-margin">
       Today, when a person is convicted of a crime or even arrested, a system of legislation takes

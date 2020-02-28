@@ -8,6 +8,7 @@ const Donate = () => {
         allowpaymentrequest=""
         frameborder="0"
         height="900px"
+        title="DonorBox"
         width="100%"
         name="donorbox"
         scrolling="no"

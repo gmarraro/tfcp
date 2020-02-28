@@ -3,8 +3,8 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `The Fair Chance Project`,
-    description: `End perpetual punishment.`,
-    author: `Gaby Marraro, Kaitlin Gu, Simon Gaviria`,
+    description: `End Perpetual Punishment.`,
+    author: `Gaby Marraro`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,

@@ -2,7 +2,7 @@ import React from "react"
 import "./story.scss"
 
 const Story = () => (
-  <div className="storyContainer is-size-6-mobile-only">
+  <div className="storyContainer is-size-6-mobile-only" id="story">
     <p className="titleText is-size-4-tablet">OUR STORY</p>
     <p className="bottom-margin">In December 2017, Michael “Zaki” Smith was
       let go from his job at a New Jersey school

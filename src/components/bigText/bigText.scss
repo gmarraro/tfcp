@@ -12,16 +12,29 @@
   align-items: center;
   justify-content: center;
   font-size: calc(60px + (140 - 60) * ((100vw - 320px) / (1600 - 320)));
+
+  @media screen and (max-width: $tablet - 1) {
+    font-size: 20vw;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    font-size: 10vw;
+  }
 }
 
 .highlighted {
   color: $base-dark;
   background-color: yellow;
   margin-right: 8px;
-  line-height: 0.8;
+  padding-bottom: 5px;
+  // line-height: 0.8;
 }
 
 .highlight-p {
   display: flex;
   margin-top: 3px;
+}
+
+.extra-space {
+  padding-bottom: 5px;
 }

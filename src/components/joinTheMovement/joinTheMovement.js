@@ -38,7 +38,7 @@ const JoinTheMovement = () => {
         consider donating today.
       </p>
       <div className="ctasContainer">
-        <div className={`border-top ${signingUp ? "no-padding" : ""}`}>
+        <div className={`border-top ${signingUp ? "no-padding" : ""}`} onClick={() => setSigningUp(true)}>
           {signingUp ? (
             <form name="newsletter" method="POST" data-netlify="true" className="email-form">
                 <input type="hidden" name="form-name" value="newsletter" />
@@ -49,19 +49,18 @@ const JoinTheMovement = () => {
             </form>
           ) : (
             <>
-              <p className="" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
+              <p>SIGN UP FOR OUR NEWSLETTER</p>
               <span>&rarr;</span>
             </>
           )}
         </div>
-        <div className="border-top">
-          <a target="_blank" href="mailto:hello@thefairchanceproject.com" className="get-in-touch">
+        <a className="border-top" target="_blank" href="mailto:hello@thefairchanceproject.com" >
+          <div className="get-in-touch">
             <span>GET IN TOUCH</span>
             <span>&rarr;</span>
 
-          </a>
-          {/* TODO: get mailto */}
-        </div>
+          </div>
+        </a>
         <div className="border-top">
           <FacebookShareButton
             url="thefairchanceproject.com"
@@ -73,12 +72,11 @@ const JoinTheMovement = () => {
             <p>SHARE ON SOCIAL</p>
             <span>&rarr;</span>
           </FacebookShareButton>
-          <span></span>
         </div>
-        <div className="border-top border-bottom" onClick={() => setDonate(true)}>
+        <a className="border-top border-bottom" onClick={() => setDonate(true)}>
           <p>DONATE</p>
           <span>&rarr;</span>
-        </div>
+        </a>
       </div>
     </div>
     </>

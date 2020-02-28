@@ -23,8 +23,8 @@
   @include until($desktop) {
     line-height: 0.65
   }
-  @media (min-width: 768px) {
-    align-self: center;
+  @media (min-width: $tablet) {
+    padding-left: 20%;;
   }
 }
 
@@ -35,14 +35,24 @@
   margin-top: 45px;
   display: flex;
   justify-content: space-between !important;
-  width: auto;
+  width: fit-content;
   justify-content: space-between;
   font-size: 14px !important;
   padding: 10px!important;
   height: auto !important;
   border-radius: 1px !important;
 
+  @media (min-width: $tablet) {
+    margin-left: 20%;
+  }
+
   @media screen and (max-width: $tablet - 1px) {
     width: 100%;
+  }
+}
+
+.join-button-arr {
+  @media screen and (min-width: $tablet) {
+    padding-left: 150px;
   }
 }
