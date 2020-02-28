@@ -10,26 +10,26 @@ const JoinTheMovement = () => {
   const [share, setShare] = useState(false)
   const [donate, setDonate] = useState(false)
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&");
+  // }
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      // .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error));
-  };
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   const form = e.target;
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({
+  //       "form-name": form.getAttribute("name"),
+  //       ...this.state
+  //     })
+  //   })
+  //     // .then(() => navigateTo(form.getAttribute("action")))
+  //     .catch(error => alert(error));
+  // };
 
   return (
     <>
@@ -62,17 +62,18 @@ const JoinTheMovement = () => {
         <div className={`border-top ${signingUp ? "no-padding" : ""}`} onClick={() => setSigningUp(true)}>
           {signingUp ? (
             <form
-              // name="newsletter"
-              // method="POST"
-              // data-netlify="true"
-              // className="email-form"
-
               name="newsletter"
-              method="post"
-              action="/thanks/"
+              method="POST"
               data-netlify="true"
+              className="email-form"
+              action="/"
               data-netlify-honeypot="bot-field"
-              onSubmit={handleSubmit}
+
+              // name="newsletter"
+              // method="post"
+              // action="/thanks/"
+              // data-netlify="true"
+              // onSubmit={handleSubmit}
 
             >
                 <input type="hidden" name="form-name" value="newsletter" />
