@@ -9,6 +9,12 @@ import "./joinTheMovement.scss"
 const JoinTheMovement = () => {
   const [signingUp, setSigningUp] = useState(false)
   const [donate, setDonate] = useState(false)
+  const [hoverFB, setHoverFB] = useState(false)
+
+  const onMouseOver = () => {
+    console.log('here');
+    setHoverFB(true)
+  }
 
   return (
     <>
@@ -58,13 +64,13 @@ const JoinTheMovement = () => {
               </div>
             </div>
           </a>
-          <div className="border-top">
+          <div className="border-top" onMouseEnter={() => setHoverFB(true)} onMouseLeave={() => setHoverFB(false)}>
             <div className="div-highlight">
               <FacebookShareButton
                 url="thefairchanceproject.com"
                 resetButtonStyle={false}
                 disabledStyle={false}
-                className="share-button-container"
+                className={`share-button-container ${hoverFB ? "hovering" : ""}`}
                 style={{ width: "100%" }}
                 quote="Work alongside us to End Perpetual Punishment. The Fair Chance Project works to dismantle the current legal system of disenfranchisement that keeps people who have been convicted of a crime, and who have served their time, from a fair chance at reintegrating back into society."
               >
