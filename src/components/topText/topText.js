@@ -12,14 +12,16 @@ const TopText = () => {
         their time, from a fair chance at reintegrating back into society.
       </p>
       <div className="sign-up-cta">
-          {signingUp ? (
-            <SignUpInput id="top" stopSignup={() => setSigningUp(false)}/>
-          ) : (
-            <div className="top-text-div-highlight">
-              <p className="sign-up-static" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
-              <span>&rarr;</span>
-            </div>
-          )}
+        {signingUp ? (
+          <SignUpInput id="top" stopSignup={() => setSigningUp(false)} />
+        ) : (
+          <div className="top-text-div-highlight">
+            <p className="sign-up-static" onClick={() => setSigningUp(true)}>
+              SIGN UP FOR OUR NEWSLETTER
+            </p>
+            <span>&rarr;</span>
+          </div>
+        )}
       </div>
     </div>
   )

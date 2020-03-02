@@ -14,13 +14,13 @@ const Donate = () => {
         scrolling="no"
         seamless="seamless"
         src="https://donorbox.org/embed/the-fair-chance-project"
-        style={{minWidth: "310px",
-                minHeight: "600px",
-                paddingTop: "25px",
-                maxHeight: "none!important"
-              }}
-      >
-      </iframe>
+        style={{
+          minWidth: "310px",
+          minHeight: "600px",
+          paddingTop: "25px",
+          maxHeight: "none!important",
+        }}
+      ></iframe>
     </div>
   )
 }

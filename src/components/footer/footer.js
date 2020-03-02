@@ -8,7 +8,12 @@ const Footer = () => {
         <h1>PERPETUAL</h1>
         <h1>PUNISHMENT</h1>
       </div>
-      <button class="button join-button" onClick={() => window.location.href = "#join-the-movement"}>JOIN THE MOVEMENT<span className="join-button-arr">&rarr;</span></button>
+      <button
+        class="button join-button"
+        onClick={() => (window.location.href = "#join-the-movement")}
+      >
+        JOIN THE MOVEMENT<span className="join-button-arr">&rarr;</span>
+      </button>
     </div>
   )
 }

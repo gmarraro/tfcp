@@ -8,7 +8,7 @@ import Nav from "components/nav/nav"
 import RightColumn from "components/rightColumn/rightColumn"
 import LeftColumn from "components/leftColumn/leftColumn"
 
-import "./layout.scss";
+import "./layout.scss"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

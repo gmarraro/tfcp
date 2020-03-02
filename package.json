@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "tfcp",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "End Perpetual Punishment",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Gaby Marraro",
   "dependencies": {
     "bulma": "^0.7.5",
     "bulma-helpers": "^0.3.8",
@@ -45,14 +45,6 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "serve": "gatsby serve"
   }
 }
