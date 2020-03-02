@@ -1,0 +1,13 @@
+@import "src/styles/global.scss";
+
+.sign-up-input {
+  height: 54px !important;
+  background-color: $input-background-color;
+  border-color: transparent;
+  width: 100%;
+  font-family: "GT America Extended Regular";
+
+  &:hover, &:focus {
+    border: none;
+  }
+}

@@ -40,22 +40,12 @@
 
 .sign-up-static {
   font-size: 16px;
+  height: 55px;
   padding: 10px 0;
   width: 100%;
   display: flex;
+  align-items: center;
   cursor: pointer;
-}
-
-.sign-up-input {
-  height: 38px;
-  background-color: $input-background-color;
-  border-color: transparent;
-  width: 100%;
-  font-family: "GT America Extended Regular";
-
-  &:hover, &:focus {
-    border: none;
-  }
 }
 
 .control {
@@ -82,5 +72,20 @@
 
   @include from($tablet) {
     margin: 0 -5%;
+  }
+}
+
+.top-text-div-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  width: 100%;
+  &:hover {
+    background-color: yellow;
+    margin: 0 -4%;
+    width: 110%;
+    border-radius: 290486px;
+    padding: 0 5%;
   }
 }

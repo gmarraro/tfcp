@@ -33,7 +33,6 @@
 
 .border-top  {
   border-top: 1px solid $base-dark;
-  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   color: $base-dark;
@@ -110,8 +109,27 @@
   position: absolute !important;
 }
 
+.modal-content.donor-box {
+  overflow: hidden;
+}
+
 input[type=submit] {
   border: none;
   background: transparent;
   font-size: 16px;
+}
+
+.div-highlight {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  width: 100%;
+  &:hover {
+    background-color: yellow;
+    margin: 0 -4%;
+    width: 110%;
+    border-radius: 290486px;
+    padding: 15px 5%;
+  }
 }

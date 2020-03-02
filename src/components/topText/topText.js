@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import SignUpInput from "components/signUpInput/signUpInput"
 
 import "./topText.scss"
 const TopText = () => {
@@ -11,19 +12,14 @@ const TopText = () => {
         their time, from a fair chance at reintegrating back into society.
       </p>
       <div className="sign-up-cta">
-        {signingUp ? (
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#" className="email-form">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            <input  className="input sign-up-input is-rounded" type="text" name="email" id="email"></input>
-            <input type="submit" value="&rarr;" className="submit-email" />
-          </form>
-        ) : (
-          <>
-            <p className="sign-up-static" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
-            <span>&rarr;</span>
-          </>
-        )}
+          {signingUp ? (
+            <SignUpInput id="top" stopSignup={() => setSigningUp(false)}/>
+          ) : (
+            <div className="top-text-div-highlight">
+              <p className="sign-up-static" onClick={() => setSigningUp(true)}>SIGN UP FOR OUR NEWSLETTER</p>
+              <span>&rarr;</span>
+            </div>
+          )}
       </div>
     </div>
   )
