@@ -40,34 +40,59 @@ const Nav = () => {
             <a className="navbar-item" href="#mission">
               OUR MISSION
             </a>
-            <a className="navbar-item" href="#story">OUR STORY</a>
-            <a className="navbar-item" href="#join-the-movement">GET INVOLVED</a>
+            <a className="navbar-item" href="#story">
+              OUR STORY
+            </a>
+            <a className="navbar-item" href="#join-the-movement">
+              GET INVOLVED
+            </a>
           </div>
         </div>
       </nav>
 
-    <nav class="navbar navbar-desktop is-hidden-touch" role="navigation" aria-label="main navigation">
-      <a role="button" class="navbar-burger burger desktop" onClick={() => setOpenMenu(true)} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+      <div
+        class="navbar navbar-desktop is-hidden-touch"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <a
+          role="button"
+          class="navbar-burger burger desktop"
+          onClick={() => setOpenMenu(true)}
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
 
-      <div className={`modal ${openMenu ? "is-active" : ""} desktop-nav`}>
-        <div class="modal-content">
-        <div className="navbar-items-desktop">
-            <a className="navbar-item" href="#mission">
-              OUR MISSION
-            </a>
-            <a className="navbar-item" href="#story">OUR STORY</a>
-            <a className="navbar-item" href="#join-the-movement">GET INVOLVED</a>
+        <div className={`modal ${openMenu ? "is-active" : ""} desktop-nav`}>
+          <div class="modal-content">
+            <div
+              className="navbar-items-desktop"
+              onClick={() => setOpenMenu(false)}
+            >
+              <a className="navbar-item" href="#mission">
+                OUR MISSION
+              </a>
+              <a className="navbar-item" href="#story">
+                OUR STORY
+              </a>
+              <a className="navbar-item" href="#join-the-movement">
+                GET INVOLVED
+              </a>
+            </div>
           </div>
+          <button
+            class="modal-close is-large"
+            aria-label="close"
+            onClick={() => setOpenMenu(false)}
+          ></button>
         </div>
-        <button class="modal-close is-large" aria-label="close"
-          onClick={() => setOpenMenu(false)}></button>
       </div>
-    </nav>
-  </>
+    </>
   )
 }
 

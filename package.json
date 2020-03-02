@@ -37,9 +37,8 @@
     "webpack": "^4.41.0"
   },
   "keywords": [
-    "gatsby"
+    "perpetual punishment"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

@@ -49,6 +49,11 @@
   @media screen and (max-width: $tablet - 1px) {
     width: 100%;
   }
+
+  &:hover {
+    border: 1px solid transparent;
+    border-color: transparent
+  }
 }
 
 .join-button-arr {
