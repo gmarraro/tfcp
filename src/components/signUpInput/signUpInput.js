@@ -6,7 +6,7 @@ const SignUpInput = props => {
   useEffect(() => {
     window.addEventListener("click", clickOutside)
     return () => window.removeEventListener("click", clickOutside)
-  })
+  }, [])
 
   const clickOutside = e => {
     var element = document.getElementById(props.id)
@@ -29,6 +29,7 @@ const SignUpInput = props => {
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="contact" />
       <input
+        autoFocus
         className="input sign-up-input is-rounded"
         type="text"
         name="email"
