@@ -51,13 +51,13 @@ const Nav = () => {
       </nav>
 
       <div
-        class="navbar navbar-desktop is-hidden-touch"
+        className="navbar navbar-desktop is-hidden-touch"
         role="navigation"
         aria-label="main navigation"
       >
         <a
           role="button"
-          class="navbar-burger burger desktop"
+          className="navbar-burger burger desktop"
           onClick={() => setOpenMenu(true)}
           aria-label="menu"
           aria-expanded="false"
@@ -69,7 +69,7 @@ const Nav = () => {
         </a>
 
         <div className={`modal ${openMenu ? "is-active" : ""} desktop-nav`}>
-          <div class="modal-content">
+          <div className="modal-content">
             <div
               className="navbar-items-desktop"
               onClick={() => setOpenMenu(false)}
@@ -86,7 +86,7 @@ const Nav = () => {
             </div>
           </div>
           <button
-            class="modal-close is-large"
+            className="modal-close is-large"
             aria-label="close"
             onClick={() => setOpenMenu(false)}
           ></button>

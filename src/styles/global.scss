@@ -11,12 +11,12 @@ $navbar-background-color: #1E002D;
 $navbar-item-hover-background-color: #1E002D;
 $navbar-item-hover-color:	#F5F0EB;
 $navbar-item-color:	#F5F0EB;
-$input-background-color: yellow;
+$input-background-color: #FFFF42;
 $input-focus-color: transparent;
 $input-focus-border-color: transparent;
 $input-focus-box-shadow-color: transparent;
 $navbar-item-hover-color: #1E002D;
-$navbar-item-hover-background-color: yellow;
+$navbar-item-hover-background-color: #FFFF42;
 
 @import "~bulma/bulma.sass";
 @import "bulma/sass/utilities/_all.sass";
@@ -35,4 +35,9 @@ body {
 
 h1 {
   font-family: "Martin"
+}
+
+.arrow {
+  width: 14px;
+  height: 8px;
 }

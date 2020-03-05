@@ -63,13 +63,6 @@
   right: 0;
 }
 
-.get-in-touch {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: #1E002D;
-}
-
 .email-form {
   position: relative;
   display: flex;
@@ -91,13 +84,15 @@
   border: none;
   background: $base-light;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 16px;
   font-family: "GT America Extended Regular";
   padding: 0;
+  cursor: pointer;
 
   &.hovering {
-    background-color: yellow;
+    background-color: #FFFF42;
   }
 }
 
@@ -122,11 +117,12 @@ input[type=submit] {
 .div-highlight {
   padding: 15px 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: transparent;
   width: 100%;
   &:hover {
-    background-color: yellow;
+    background-color: #FFFF42;
     margin: 0 -5%;
     width: 110%;
     border-radius: 290486px;

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import SignUpInput from "components/signUpInput/signUpInput"
+import arrow from "images/arrow.png"
 
 import "./topText.scss"
 const TopText = () => {
@@ -19,7 +20,7 @@ const TopText = () => {
             <p className="sign-up-static" onClick={() => setSigningUp(true)}>
               SIGN UP FOR OUR NEWSLETTER
             </p>
-            <span>&rarr;</span>
+            <img className="arrow top-text-arr" src={arrow}/>
           </div>
         )}
       </div>

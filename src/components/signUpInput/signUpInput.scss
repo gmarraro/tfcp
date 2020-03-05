@@ -6,8 +6,12 @@
   border-color: transparent;
   width: 100%;
   font-family: "GT America Extended Regular";
+  background: url("~src/images/arrow.png") no-repeat right 5% center;
+  background-size: 14px 8px;
+
 
   &:hover, &:focus {
-    border: none;
+    border: 1px solid transparent;
+    border-color: transparent !important;
   }
 }

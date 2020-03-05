@@ -34,7 +34,6 @@ const SignUpInput = props => {
         name="email"
         id="email"
       ></input>
-      <input type="submit" value="&rarr;" className="submit-email" />
     </form>
   )
 }

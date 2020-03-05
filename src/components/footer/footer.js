@@ -1,4 +1,6 @@
 import React from "react"
+import arrow from "images/arrow.png"
+
 import "./footer.scss"
 const Footer = () => {
   return (
@@ -9,10 +11,10 @@ const Footer = () => {
         <h1>PUNISHMENT</h1>
       </div>
       <button
-        class="button join-button"
+        className="button join-button"
         onClick={() => (window.location.href = "#join-the-movement")}
       >
-        JOIN THE MOVEMENT<span className="join-button-arr">&rarr;</span>
+        JOIN THE MOVEMENT<img className="arrow" src={arrow}/>
       </button>
     </div>
   )

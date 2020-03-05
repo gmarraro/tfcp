@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { FacebookShareButton } from "react-share"
 import SignUpInput from "components/signUpInput/signUpInput"
-
 import Donate from "components/donate/donate"
+import arrow from "images/arrow.png"
 
 import "./joinTheMovement.scss"
 
@@ -19,12 +19,12 @@ const JoinTheMovement = () => {
   return (
     <>
       <div className={`modal ${donate ? "is-active" : ""}`}>
-        <div class="modal-background"></div>
-        <div class="modal-content donor-box">
+        <div className="modal-background"></div>
+        <div className="modal-content donor-box">
           <Donate />
         </div>
         <button
-          class="modal-close is-large"
+          className="modal-close is-large"
           aria-label="close"
           onClick={() => setDonate(false)}
         ></button>
@@ -48,7 +48,7 @@ const JoinTheMovement = () => {
             ) : (
               <div className="div-highlight">
                 <p>SIGN UP FOR OUR NEWSLETTER</p>
-                <span>&rarr;</span>
+                <img className="arrow" src={arrow}/>
               </div>
             )}
           </div>
@@ -57,11 +57,9 @@ const JoinTheMovement = () => {
             target="_blank"
             href="mailto:zakithebarber@gmail.com"
           >
-            <div className="div-highlight">
-              <div className="get-in-touch">
-                <span>GET IN TOUCH</span>
-                <span>&rarr;</span>
-              </div>
+          <div className="div-highlight">
+                <p>GET IN TOUCH</p>
+              <img className="arrow" src={arrow}/>
             </div>
           </a>
           <div className="border-top" onMouseEnter={() => setHoverFB(true)} onMouseLeave={() => setHoverFB(false)}>
@@ -75,7 +73,7 @@ const JoinTheMovement = () => {
                 quote="Work alongside us to End Perpetual Punishment. The Fair Chance Project works to dismantle the current legal system of disenfranchisement that keeps people who have been convicted of a crime, and who have served their time, from a fair chance at reintegrating back into society."
               >
                 <p>SHARE ON SOCIAL</p>
-                <span>&rarr;</span>
+                <img className="arrow" src={arrow}/>
               </FacebookShareButton>
             </div>
           </div>
@@ -85,7 +83,7 @@ const JoinTheMovement = () => {
           >
             <div className="div-highlight">
               <p>DONATE</p>
-              <span>&rarr;</span>
+              <img className="arrow" src={arrow}/>
             </div>
           </a>
         </div>
